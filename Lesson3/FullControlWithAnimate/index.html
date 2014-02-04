@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Lessons</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+    		<h2>Some Text Here</h2>
+    		<p>
+    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora harum est veritatis doloribus architecto aliquid repellendus quae quis nobis vero incidunt porro quas neque repudiandae ipsum. Consequatur repellat expedita magnam.</p>
+    	</div>
+    	<button>Increase</button>	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script>
+	
+	(function() {
+		var box = $('.box');
+		//Old method of increasing fontsize
+		//var fontSize = parseInt(box.css('font-size'), 10);
+
+			$('button').on('click', function() {
+				box.animate({
+					'font-size':'+=5',
+					'width':'+=400'
+				},4000, 'linear');
+
+			});
+
+	})();
+
+
+	
+	</script>
+</body>
+</html>

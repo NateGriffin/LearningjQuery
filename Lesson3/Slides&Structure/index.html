@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="js">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Lessons</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste porro modi quaerat sed quam perferendis explicabo beatae dolorem earum magni voluptatum nesciunt neque. Laborum debitis ratione quasi voluptate eligendi sit!
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste porro modi quaerat sed quam perferendis explicabo beatae dolorem earum magni voluptatum nesciunt neque. Laborum debitis ratione quasi voluptate eligendi sit!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste porro modi quaerat sed quam perferendis explicabo beatae dolorem earum magni voluptatum nesciunt neque. Laborum debitis ratione quasi voluptate eligendi sit!
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste porro modi quaerat sed quam perferendis explicabo beatae dolorem earum magni voluptatum nesciunt neque. Laborum debitis ratione quasi voluptate eligendi sit!</p>
+   <!--<button class="contact">Contact Me</button>-->
+   <form action="" id="contact">
+   	<h1>Contact Me</h1>
+   	<input type="text" placeholder="Enter Your" />
+   	<h2>Email Me</h2>
+   	<input type="text" placeholder="Enter Your Email">
+   	<h3>Message</h3>
+   	<textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>Submit</button>
+   </form>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		(function() {
+			$('html').addClass('js');
+			var contactForm = {
+				init: function(){
+					$('<button></button', {
+						text:'Contact Me'
+					})
+						.insertAfter('p')
+				}};
+			contactForm.init();
+
+		})();
+	
+	</script>
+</body>
+</html>

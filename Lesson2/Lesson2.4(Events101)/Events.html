@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 3</title>
+	<link rel="stylesheet" href="day.css">
+</head>
+<body>
+	<h1>My Site</h1>
+	<button data-file="day">Day</button>
+	<button data-file="night">Night</button>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+
+            var link = $('link');
+
+		     $('button').on('click', function() {
+		     	var href = link.attr('href'),
+		     	    $this = $(this),
+		            stylesheet = $this.data('file');
+
+
+		     	$this
+		     		.siblings('button')
+		     		.removeAttr('disabled');
+		     	link.attr('href', stylesheet + ".css");
+
+
+                   $this.attr('disabled', 'disabled');
+               });
+		   
+
+	</script>
+</body>
+</html>
+<!-- Data-dataname -->

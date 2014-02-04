@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Lessons Events 201</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<dl>
+		<dt>What are your hours?</dt>
+		<dd>They are negotable.</dd>
+		<dt>What are your hours?</dt>
+		<dd>They are negotable.</dd>
+		<dt>What are your hours?</dt>
+		<dd>They are negotable.</dd>
+		<dt>What are your hours?</dt>
+		<dd>They are negotable.</dd>
+		<dt>What are your hours?</dt>
+		<dd>They are negotable.</dd>
+
+		<dt>What are your hours?</dt>
+		<dd>They are negotable.</dd>
+		<dt>What are your hours?</dt>
+		<dd>They are negotable.</dd>
+	</dl>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	(function() {
+		var dd = $('dd'), dt = $("dt");
+		dd.filter(':nth-child(n+4)').addClass('hide');
+        $('dl').on('mouseenter','dt', function() {
+           $(this)
+           		.next()
+           		.slideDown(200)
+           		.siblings('dd')
+           			.slideUp(300);
+
+        });
+	})();
+	</script>
+</body>
+</html>

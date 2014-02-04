@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>jQuery Tut</title>
+	<style>
+	  .hello {
+	  	color:#e74001;
+	  }
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	
+	$(document).ready(function() {
+	  $('ul').children('li:nth-child(odd)').addClass("hello");
+	});
+	</script>
+	
+</head>
+<body>
+  
+  <ul>
+  	<li>Hello World</li>
+  	<li>Hello 2</li>
+  	<li>List Item</li>
+  	<li>
+  		<ul>
+  			<li>Stiff</li>
+  			<li>Another Thing</li>
+  			<li>Stuff Part Deux</li>  		
+  		</ul>
+  	</li>
+  </ul>
+  
+
+</body>
+</html>
+

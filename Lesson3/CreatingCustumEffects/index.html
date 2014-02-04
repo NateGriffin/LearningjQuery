@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="js">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Lessons</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+
+  <h1>Click Me</h1>
+  <div class="content">
+  <p>
+  	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt perspiciatis explicabo modi molestiae omnis soluta doloremque consequatur quae rerum reiciendis asperiores quos suscipit maxime facilis temporibus doloribus unde neque eligendi.</span>
+  	<span>Provident error hic facere aliquam iusto saepe delectus commodi nobis accusantium cupiditate voluptatibus necessitatibus similique quos minus perferendis voluptate quia debitis et itaque corrupti vitae magnam atque tempore blanditiis animi.</span>
+  	<span>Laboriosam necessitatibus cumque nesciunt atque deleniti enim odio aliquid tempora ex omnis voluptates debitis tenetur dicta eum eaque quo libero amet repudiandae sit esse hic reprehenderit quis! Dolor quia tempore!</span>
+  </p>
+  <p>
+  	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt perspiciatis explicabo modi molestiae omnis soluta doloremque consequatur quae rerum reiciendis asperiores quos suscipit maxime facilis temporibus doloribus unde neque eligendi.</span>
+  	<span>Provident error hic facere aliquam iusto saepe delectus commodi nobis accusantium cupiditate voluptatibus necessitatibus similique quos minus perferendis voluptate quia debitis et itaque corrupti vitae magnam atque tempore blanditiis animi.</span>
+  	<span>Laboriosam necessitatibus cumque nesciunt atque deleniti enim odio aliquid tempora ex omnis voluptates debitis tenetur dicta eum eaque quo libero amet repudiandae sit esse hic reprehenderit quis! Dolor quia tempore!</span>
+  </p>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		
+
+			jQuery.fn.flash = function( speed, easing, callback ) {
+				$(this).slideDown(500, function(){
+					$(this).delay(1000).slideUp(500);
+				});
+		//return this.animate( props, speed, easing, callback );
+	};
+	$('div.content').hide();
+	$('h1').on('click', function() {
+		$(this).next('div.content').flash();
+	});
+
+		
+	
+	</script>
+</body>
+</html>

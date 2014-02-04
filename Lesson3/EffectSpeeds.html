@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Lessons</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Article Title</h1>
+		<div class="content">
+
+	<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt natus est porro totam ipsam voluptatum dolorum illo recusandae quisquam hic quo animi dicta aut aliquam aperiam repellat fugit dolor optio!</span>
+		<span>Quasi ad obcaecati tenetur excepturi a aut fugit iusto voluptate asperiores aperiam non in eaque deserunt doloribus quidem! Numquam doloribus ea a incidunt officiis laudantium assumenda ad temporibus vero est?</span>
+		<span>Eligendi velit nostrum assumenda tenetur nisi dignissimos modi molestiae mollitia inventore recusandae odit quis voluptatibus distinctio esse voluptatum harum sequi voluptatem earum qui iusto? Illum beatae ea ipsum blanditiis cum.</span>
+	</p>
+    <h1>Article 2 Title</h1>
+
+	<p>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt natus est porro totam ipsam voluptatum dolorum illo recusandae quisquam hic quo animi dicta aut aliquam aperiam repellat fugit dolor optio!</span>
+		<span>Quasi ad obcaecati tenetur excepturi a aut fugit iusto voluptate asperiores aperiam non in eaque deserunt doloribus quidem! Numquam doloribus ea a incidunt officiis laudantium assumenda ad temporibus vero est?</span>
+		<span>Eligendi velit nostrum assumenda tenetur nisi dignissimos modi molestiae mollitia inventore recusandae odit quis voluptatibus distinctio esse voluptatum harum sequi voluptatem earum qui iusto? Illum beatae ea ipsum blanditiis cum.</span>
+	</p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script>
+	
+	(function() {
+		$('div.content').hide();
+        $('h1').on('click', function() {
+        	$(this).next().slideDown('slow');
+        })
+
+
+
+
+	})();
+
+	
+	</script>
+</body>
+</html>

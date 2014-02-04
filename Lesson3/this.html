@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Lessons</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<a href="http://www.crunchyroll.com/hunter-x-hunter/episode-109-taking-stock-x-and-x-taking-action-646061">Click Here Bitch</a>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	var obj = {
+		doIt:function(e) {
+			e.preventDefault();
+			console.log(this);
+		}
+	}
+	
+	 $('a').on('click', obj.doIt);
+	
+	   
+	</script>
+</body>
+</html>

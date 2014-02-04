@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Lessons</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h2>Click Me</h2>
+		<h2>Click Me</h2>
+
+	<h2>Click Me</h2>
+
+	<h2>Click Me</h2>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	(function() {
+		$('h2').bind('click', function() {
+            $('nth-child(odd)')
+            	.css('color','orange');
+			console.log('clicked');
+			$(this).clone().appendTo('body');
+
+		});
+	})();
+	</script>
+</body>
+</html>

@@ -26,7 +26,7 @@
             direction = 'next';
         } else if (current - 1 === imgsLength) {
         	current = 1;
-        	loc = 0;
+         	loc = 0;
 
         }
         transition(sliderUl, loc, direction);

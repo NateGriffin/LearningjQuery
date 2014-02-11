@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Lessons</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<script id='portTemp' type='tut/template'>
+		<h2> {{title}} </h2>
+		<img src={{work}} alt={{title}} />
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+	<script>
+	(function() {
+		var content = [{
+			title: "My First Neat Work",
+			work: "http://nategriffin.me/img/NGriffin-Project3_v5_thumb.jpg",
+
+		},
+		{
+			title: "My Second Neat Work",
+			work:"http://nategriffin.me/img/NGriffin-Project2_v9_thumb.jpg",
+
+		},
+		{
+			title: "My Third Neat Work",
+			work:"http://nategriffin.me/img/NGriffin-Project2_v9_thumb.jpg",
+
+		}
+		],
+
+		template = $.trim($('#portTemp').html()),
+		frag = '';
+
+		//Use jQuery.each(); to display template data
+		$.each(content, function(index, obj) {
+			frag +=
+			 temp = template.replace(/{{title}}/ig, obj.title)
+			                   .replace(/{{work}}/ig, obj.work);
+			console.log(temp);
+
+			$('body').append(frag);
+
+		});
+
+	})();
+
+	
+	</script>
+</body>
+</html>

@@ -12,17 +12,18 @@ body {
 }
 
 .slider-container {
-	width:inherit;
+	width: inherit;
 	height:400px;
-		overflow: hidden;
-			margin: 0 auto;
+	overflow: hidden;
+	margin: 0 auto;
 
 
 }
+
 .slider-container ul {
 	width:10000px;
-	margin:40px auto;
 	box-shadow:0px 0px 4px rgba(0,0,0,0.5);
+	
 }
 li {
 	float: left;
